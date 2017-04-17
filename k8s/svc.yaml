@@ -2,6 +2,7 @@ kind: Service
 apiVersion: v1
 metadata:
   name: sample-app-svc
+  namespace: frontend
 spec:
   type: LoadBalancer
 #  loadBalancerIP: 104.199.190.226
