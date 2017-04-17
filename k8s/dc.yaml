@@ -1,0 +1,31 @@
+kind: Deployment
+apiVersion: extensions/v1beta1
+metadata:
+  name: sample-app-dc
+  namespace: frontend
+spec:
+#  replicas: 1
+#  revisionHistoryLimit: 2 
+  template:
+    metadata:
+      name: sample-app
+#      labels:
+#        app: sample-app
+#        role: frontend
+#        env: dev
+    spec:
+      containers:
+      - name: sample-app
+        image: gcr.io/gdg-demo/sample-app:v1.0.0
+#        resources:
+#          limits:
+#            memory: "500Mi"
+#            cpu: "100m"
+        imagePullPolicy: Always
+#        readinessProbe:
+#          httpGet:
+#            path: /
+#            port: 80
+        ports:
+        - name: sample-app
+          containerPort: 80
