@@ -9,14 +9,14 @@ spec:
   template:
     metadata:
       name: sample-app
-#      labels:
-#        app: sample-app
+      labels:
+        app: sample-app
 #        role: frontend
 #        env: dev
     spec:
       containers:
       - name: sample-app
-        image: gcr.io/gdg-demo/sample-app:v1.0.0
+        image: asia.gcr.io/gdg-demo-165104/kube-sample-app:latest
 #        resources:
 #          limits:
 #            memory: "500Mi"
