@@ -1,5 +1,5 @@
 node {
-  def project = 'gdg-demo-165104'
+  def project = 'gdg-demo-165702'
   def appName = 'kube-sample-app'
   def imageTag = "asia.gcr.io/${project}/${appName}:v${env.BUILD_NUMBER}"
   def NAMESPACE = 'frontend'

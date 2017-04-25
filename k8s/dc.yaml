@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: sample-app
-        image: asia.gcr.io/gdg-demo-165104/kube-sample-app:latest
+        image: asia.gcr.io/gdg-demo-165702/kube-sample-app:latest
 #        resources:
 #          limits:
 #            memory: "500Mi"
