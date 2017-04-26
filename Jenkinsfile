@@ -14,7 +14,7 @@ node {
 
   stage "Deploy Application"
   // Roll out to production
-  sh("sed -i.bak 's#asia.gcr.io/${project}/${appName}:v1#${imageTag}#' ./k8s/dc.yaml")
+//  sh("sed -i.bak 's#asia.gcr.io/${project}/${appName}:v1#${imageTag}#' ./k8s/dc.yaml")
 //  sh("kubectl --namespace=${NAMESPACE} apply -f ./k8s/dc.yaml")
   
 }
